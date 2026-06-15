@@ -1,64 +1,14 @@
-<!DOCTYPE html>
-<html lang="en-US" dir="ltr">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vertex 3</title>
-  <script>
-    // custom caching system
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('src/sw.js')
-        .catch(error => console.error(error));
-    }
-  </script>    
-
-  <!-- tailwind  -->
-  <script src="src/tailwind.js"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            darkgrey: '#121212',
-            navborder: 'rgb(76, 72, 72)'
-
-          }
-        }
-      },
-      content: [
-        "./**/*.html",
-      ]
-    }
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet" hreflang="en-US" type="text/css" crossorigin="anonymous">
-</head>
-
-<body class="m-0 p-0 bg-darkgrey flex text-slate-200 h-full overflow-hidden">
-  <nav class="fixed top-0 w-full flex items-center px-[30px] py-[15px] border-t border-b border-navborder bg-[rgba(20,33,65,0.03)] z-10 box-border">
-    <img src="assets/vertex.png" alt="Vertex 3">
-    <h1>Vertex 3</h1>
-  </nav>
-
-  <main>
-    <div class="controls">
-      <div class="search-bar">
-        <i class="fas fa-search"></i>
-        <input type="text" placeholder="Search games..." id="search">
-      </div>
-      <select id="sort">
-        <option value="" disabled selected hidden>Sort by</option>
-        <option value="index">Latest Games</option>
-        <option value="alphabet">Title (A–Z)</option>
-        <option value="launches">Most Played</option>
-      </select>
-
-    </div>
-
-    <div class="games-container" id="games"></div>
-    <div class="pagination" id="pagination"></div>
-  </main>
-  <script src="src/main.js" type="module" defer></script>
-</body>
-
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="0; url=games/thecoffinofandyandleyley/index.html">
+    <title>WebRPG-org/vertexiii-vertexiii.github.io</title>
+    <script defer src="https://insight.ravelloh.com/script.js?siteId=5ace6623-f51b-4571-8f60-e0473ea3317b"></script>
+    <script>location.replace("games/thecoffinofandyandleyley/index.html");</script>
+  </head>
+  <body style="background:#000;color:#fff;font-family:sans-serif">
+    <a href="games/thecoffinofandyandleyley/index.html">Start game</a>
+  </body>
 </html>
